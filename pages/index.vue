@@ -8,16 +8,21 @@
         </div>
       </div>
       <nav class="container">
-        <ul>
-          <li>Inicio</li>
-          <li>Acerca de nosotros</li>
-          <li>Historia</li>
-          <li>Contacto</li>
-        </ul>
+      
+        <b-navbar>
+          <b-navbar-nav>
+            <b-nav-item class="active" href="#"> Inicio</b-nav-item>
+            <b-nav-item href="#">Acerca de nosotros</b-nav-item>
+            <b-nav-item href="#">Historia</b-nav-item>
+            <b-nav-item href="#">Contacto</b-nav-item>
+          </b-navbar-nav>
+        </b-navbar>  
+
         <ul class="ml-auto">
           <li>Es</li>
           <li>En</li>          
         </ul>
+
       </nav>
       <div class="title">
         <h1>Las mejores raquetas para <br> jugar <span class="title__highlight">Tennis</span> </h1>
@@ -65,9 +70,7 @@
       </div>
     </section>
 
-    <section id="background">
-      <div>background image</div>
-    </section>
+    <section id="background"></section>
 
     <section id="footer">
       <div class="footer__main">
@@ -108,6 +111,43 @@ export default {
 
 <style lang="scss">
 
+// Generals
+
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+// Sections
+
+  //Navbar 
+    .nav-item.active {
+      font-weight:bold;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+      letter-spacing: 1.5px;
+      color:white;
+    }
+
+#hero {
+  background-image: url('/group.png');
+  min-height: 785px;
+}
+#history {
+  min-height: 392px;
+  background-color: #f3f4f8;
+}
+#showcase {
+  min-height: 468px;
+}
+#background {
+  background-image: url('/action-athlete-ball-342361.png');  
+  min-height:586px;
+}
+#footer {
+  background-color: #cbe346;
+  min-height:203px;
+}
 </style>
 
 
