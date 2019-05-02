@@ -246,7 +246,7 @@ button {
 #hero {
   background-size: cover;
   background-position:center center;
-  background-image: url('/group@2x.png');
+  background-image: url('/group.jpg');
   min-height: 785px;
 }
 #history {
